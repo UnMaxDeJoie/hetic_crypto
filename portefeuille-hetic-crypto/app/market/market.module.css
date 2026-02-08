@@ -1,0 +1,119 @@
+.container {
+  padding: 40px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  background: linear-gradient(45deg, #00f260, #0575e6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* La carte vitrée pour le tableau */
+.glassCard {
+  background: #191c24;
+  border: 1px solid #2d3342;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  overflow-x: auto; /* Pour le mobile */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.thead tr {
+  text-align: left;
+  border-bottom: 1px solid #2d3342;
+}
+
+.th {
+  padding: 15px;
+  color: #8899a6;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tr {
+  transition: background-color 0.2s;
+  border-bottom: 1px solid #2d3342;
+}
+
+.tr:last-child {
+  border-bottom: none;
+}
+
+.tr:hover {
+  background-color: rgba(255,255,255,0.03);
+}
+
+.td {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.coinInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.coinName {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.coinSymbol {
+  color: #8899a6;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+/* Variations de prix */
+.positive {
+  color: #00f260;
+  font-weight: 500;
+}
+
+.negative {
+  color: #ff4d4d;
+  font-weight: 500;
+}
+
+/* Bouton d'action */
+.actionButton {
+  padding: 8px 15px;
+  background: rgba(5, 117, 230, 0.1);
+  color: #0575e6;
+  border: 1px solid rgba(5, 117, 230, 0.3);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.actionButton:hover {
+  background: #0575e6;
+  color: white;
+  box-shadow: 0 0 10px rgba(5, 117, 230, 0.4);
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  color: #8899a6;
+  font-style: italic;
+}

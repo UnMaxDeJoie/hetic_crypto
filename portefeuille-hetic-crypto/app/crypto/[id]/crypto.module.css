@@ -1,0 +1,157 @@
+.container {
+  padding: 40px;
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  min-height: 100vh;
+}
+
+/* En-tête : Nom + Prix */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00f260;
+  text-shadow: 0 0 20px rgba(0, 242, 96, 0.3);
+}
+
+/* Mise en page : Graphique à gauche, Trading à droite */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* Cartes vitrées */
+.glassCard {
+  background: #191c24;
+  border: 1px solid #2d3342;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  height: 100%;
+}
+
+.chartContainer {
+  height: 400px;
+  width: 100%;
+}
+
+/* Panneau de Trading (à droite) */
+.tradeTitle {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #2d3342;
+  padding-bottom: 15px;
+}
+
+.balanceInfo {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.balanceLabel {
+  font-size: 0.9rem;
+  color: #8899a6;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.balanceAmount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Formulaire Achat/Vente */
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: #8899a6;
+  font-size: 0.9rem;
+}
+
+.input {
+  width: 100%;
+  padding: 15px;
+  background: #0f1116;
+  border: 1px solid #2d3342;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input:focus {
+  border-color: #0575e6;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.btnBuy {
+  background: linear-gradient(45deg, #00C853, #69F0AE);
+  box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+}
+
+.btnSell {
+  background: linear-gradient(45deg, #D50000, #FF5252);
+  box-shadow: 0 4px 15px rgba(213, 0, 0, 0.3);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

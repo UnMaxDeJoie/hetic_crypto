@@ -1,0 +1,218 @@
+/* CONTAINER PRINCIPAL */
+.container {
+  padding: 40px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.highlight {
+  background: linear-gradient(45deg, #00f260, #0575e6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  color: #8899a6;
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.logoutButton {
+  padding: 10px 20px;
+  background-color: rgba(255, 77, 77, 0.1);
+  color: #ff4d4d;
+  border: 1px solid rgba(255, 77, 77, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.logoutButton:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+/* CARTE TOTALE (Le gros chiffre) */
+.totalCard {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.totalLabel {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #8899a6;
+  margin-bottom: 15px;
+}
+
+.totalAmount {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(5, 117, 230, 0.5);
+}
+
+/* GRILLE POUR LE RESTE */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+/* CARTES VITRÉES */
+.glassCard {
+  background: #191c24;
+  border: 1px solid #2d3342;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.cardTitle {
+  margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.helperText {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* FORMULAIRE */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  padding: 15px;
+  background: #0f1116;
+  border: 1px solid #2d3342;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0575e6;
+}
+
+.addButton {
+  padding: 15px;
+  background: linear-gradient(45deg, #00f260, #0575e6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.addButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 242, 96, 0.4);
+}
+
+/* TABLEAU */
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 15px;
+  color: #8899a6;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #2d3342;
+}
+
+.tr {
+  transition: background-color 0.2s;
+}
+
+.tr:hover {
+  background-color: rgba(255,255,255,0.03);
+}
+
+.td {
+  padding: 20px 15px;
+  border-bottom: 1px solid #2d3342;
+  color: #e1e1e1;
+}
+
+.assetLink {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+}
+
+.assetLink:hover {
+  color: #00f260;
+}
+
+.coinIcon {
+  width: 30px;
+  height: 30px;
+  background: #2d3342;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.valueText {
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.loading {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
